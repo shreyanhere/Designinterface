@@ -8,7 +8,7 @@ import {
   IMG_LEXGO_HERO, IMG_PERSONA_RICKY, SCREENS_LEXGO,
   IMG_HEALTH, IMG_PERSONA_MARCUS, IMG_PERSONA_SARAH, IMG_PERSONA_PRIYA, IMG_PERSONA_JAMES, SCREENS_DRTM,
   IMG_DASHBOARD, IMG_HUB, IMG_ACCESS, IMG_DARK_UI, IMG_MOBILE_HLTH,
-  IMG_WIREFRAME, IMG_MOBILE_APP, IMG_LIGHT_DASH, IMG_ONBOARDING, IMG_SETTINGS,
+  IMG_WIREFRAME, IMG_MOBILE_APP, IMG_LIGHT_DASH, IMG_ONBOARDING, IMG_SETTINGS, LOGO_MAIN,
 } from "./projectImages";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -1481,8 +1481,15 @@ function Hero() {
           <span className="font-inter text-xs tracking-widest uppercase text-[#0A0A0A]/50 flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse" />Available for new opportunities</span>
           <span className="font-inter text-xs tracking-widest uppercase text-[#0A0A0A]/40">Bengaluru, IN</span>
         </motion.div>
-        <div className="overflow-hidden"><motion.h1 initial={{ y: 120, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }} className="hero-display">SHAURYA</motion.h1></div>
-        <div className="overflow-hidden -mt-6 md:-mt-10"><motion.h1 initial={{ y: 120, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.45, ease: [0.16, 1, 0.3, 1] }} className="hero-display gradient-text">SUMUK</motion.h1></div>
+        <div className="flex flex-col">
+          <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+            <div className="overflow-hidden pb-4 pr-3 md:pr-6"><motion.h1 initial={{ y: 120, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }} className="hero-display">SHAURYA</motion.h1></div>
+            <motion.div initial={{ opacity: 0, scale: 0.8, rotate: -6 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }} className="hidden md:block flex-shrink-0 mt-4 md:mt-6 lg:mt-8">
+              <img src={LOGO_MAIN} alt="Avatar" className="w-28 h-28 md:w-36 md:h-36 lg:w-[150px] lg:h-[150px] drop-shadow-2xl object-contain" style={{ filter: "drop-shadow(0 12px 20px rgba(0,0,0,0.12))" }} />
+            </motion.div>
+          </div>
+          <div className="overflow-hidden pb-4 pr-3 md:pr-6 -mt-3 md:-mt-4"><motion.h1 initial={{ y: 120, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.45, ease: [0.16, 1, 0.3, 1] }} className="hero-display gradient-text">SUMUK</motion.h1></div>
+        </div>
       </motion.div>
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 mt-12 md:mt-0">
         <p className="font-inter text-[#0A0A0A]/60 max-w-sm text-base md:text-lg leading-relaxed">Senior UX Designer crafting intuitive, <span className="gradient-text font-semibold">AI-powered</span> product experiences for global brands.</p>

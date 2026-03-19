@@ -41,6 +41,9 @@ import choco10    from "../images/choco factory/10.svg";
 import choco11    from "../images/choco factory/11.svg";
 import choco12    from "../images/choco factory/12.svg";
 
+// ─── Avatar Logo ─────────────────────────────────────────────────────────────
+import logoMain   from "../images/logo_main.png";
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Exports used by App.tsx
 // ─────────────────────────────────────────────────────────────────────────────
@@ -144,3 +147,6 @@ export const IMG_MOBILE_APP  = "https://images.unsplash.com/photo-1764406562219-
 export const IMG_LIGHT_DASH  = "https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkYXNoYm9hcmQlMjBpbnRlcmZhY2UlMjBsaWdodCUyMGNsZWFufGVufDF8fHx8MTc3MzgxNjg1MXww&ixlib=rb-4.1.0&q=80&w=1080";
 export const IMG_ONBOARDING  = "https://images.unsplash.com/photo-1711169678351-2765420a5b02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpbiUyMG9uYm9hcmRpbmclMjBzY3JlZW4lMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzczODE2ODUyfDA&ixlib=rb-4.1.0&q=80&w=1080";
 export const IMG_SETTINGS    = "https://images.unsplash.com/photo-1762340275855-ae8f4c2c144e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXR0aW5ncyUyMHByb2ZpbGUlMjB1c2VyJTIwYWNjb3VudCUyMHBhbmVsfGVufDF8fHx8MTc3MzgxNjg1M3ww&ixlib=rb-4.1.0&q=80&w=1080";
+
+// ─── Avatar Logo ─────────────────────────────────────────────────────────────
+export const LOGO_MAIN = logoMain;
